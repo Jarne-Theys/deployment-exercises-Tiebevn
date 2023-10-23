@@ -5,17 +5,17 @@ metadata:
   namespace: argocd
 spec:
   sources:
-  - repoURL: https://charts.js.wiki
-    chart: wiki
-    targetRevision: x
-    helm:
-      valueFiles:
-        - $values/01_WIKI/values.yaml
-  - repoURL: 'https://github.com/Cloud-Computing-2324/deployment-exercises-Tiebevn.git'
-    targetRevision: main
-    ref: values
+    - repoURL: https://charts.js.wiki
+      chart: wiki
+      targetRevision: x
+      helm:
+        valueFiles:
+          - $values/01_WIKI/values.yaml
+    - repoURL: "https://github.com/Jarne-Theys/deployment-exercises-Tiebevn"
+      targetRevision: main
+      ref: values
   destination:
-    server: 'https://kubernetes.default.svc'
+    server: "https://kubernetes.default.svc"
     namespace: wiki
   project: default
   syncPolicy:
