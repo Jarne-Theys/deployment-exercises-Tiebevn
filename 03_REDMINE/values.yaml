@@ -1,0 +1,13 @@
+ingress:
+  enabled: true
+  annotations:
+    cert-manager.io/cluster-issuer: cluster-issuer
+  hosts:
+    - host: support.79.co.ucll.cloud
+      paths:
+        - path: /
+          pathType: Prefix
+  tls:
+    - secretName: support-tls
+      hosts:
+        - support.79.co.ucll.cloud
