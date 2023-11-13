@@ -4,7 +4,6 @@ metadata:
   name: wiki
   namespace: argocd
 spec:
-  replicas: 0
   sources:
     - repoURL: https://charts.js.wiki
       chart: wiki

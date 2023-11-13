@@ -4,7 +4,6 @@ metadata:
   name: redmine
   namespace: argocd
 spec:
-  replicas: 0
   sources:
     - repoURL: https://charts.bitnami.com/bitnami
       chart: redmine
