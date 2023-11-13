@@ -7,7 +7,7 @@ ingress:
       paths:
         - path: /
           pathType: Prefix
-  tls:
-    - secretName: support-tls
-      hosts:
-        - support.79.co.ucll.cloud
+#  tls:
+#    - secretName: support-tls
+#      hosts:
+#        - support.79.co.ucll.cloud
