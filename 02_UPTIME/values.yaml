@@ -11,5 +11,3 @@ ingress:
     - secretName: uptime-kuma-tls
       hosts:
         - up.79.co.ucll.cloud
-spec:
-  replicas: 0

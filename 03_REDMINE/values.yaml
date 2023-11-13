@@ -11,6 +11,3 @@ ingress:
 #    - secretName: support-tls
 #      hosts:
 #        - support.79.co.ucll.cloud
-
-spec:
-  replicas: 0
