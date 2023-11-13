@@ -5,9 +5,9 @@ metadata:
   namespace: argocd
 spec:
   sources:
-      - repoUrl: 
-
-
+    - repoURL: https://charts.bitnami.com/bitnami
+      chart: redmine
+      targetRevision: 25.0.5
       helm:
         valueFiles:
           - $values/03_REDMINE/values.yaml
