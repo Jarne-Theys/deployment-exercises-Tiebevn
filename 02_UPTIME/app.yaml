@@ -4,6 +4,7 @@ metadata:
   name: uptime
   namespace: argocd
 spec:
+  replicas: 0
   sources:
     - repoURL: https://helm.irsigler.cloud
       chart: uptime-kuma
